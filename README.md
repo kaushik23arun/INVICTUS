@@ -10,6 +10,21 @@ Built with:
 
 ## FrontEnd
 
+
+
+On entering the value and pressing submit
+```js
+ <form className="search-form" onSubmit={(e) => submit(e)}>
+            {
+              alert!=="" &&<Alerts alert={alert}/>
+
+            }
+                <input id="name" type="text" placeholder="Enter Number" onChange={(e) => handle(e)}/>
+                <button type="submit">Submit</button>
+            </form>
+ ```
+
+
 React Snippets
 
 ```js
@@ -23,20 +38,6 @@ const freqMap = {};
     useEffect(()=>{
     },[n]);
  ```
-
-Connecting the React Client to the Express API. 
-On entering the value and pressing submit
-```js
- <form className="search-form" onSubmit={(e) => submit(e)}>
-            {
-              alert!=="" &&<Alerts alert={alert}/>
-
-            }
-                <input id="name" type="text" placeholder="Enter Number" onChange={(e) => handle(e)}/>
-                <button type="submit">Submit</button>
-            </form>
- ```
-
 
 
 After pressing on submit,  a request should be sent to the backend and fetch the data 
