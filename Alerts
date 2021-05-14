@@ -1,0 +1,9 @@
+
+function Alerts({alert}){
+	
+	return(<>
+		
+    <h6>{alert}</h6>
+		</>);
+}
+export default Alerts;
